@@ -1,0 +1,5 @@
+import{j as o}from"./jsx-runtime-D_zvdyIk.js";import{T as s,E as d}from"./TextInput-t5NA0fwV.js";import"./index-C1DArrMF.js";import"./_commonjsHelpers-BosuxZz1.js";import"./IconBase.esm-CIacLvLI.js";import"./index-o6r0mSXN.js";const T={title:"Components/TextInput",component:s.Root,args:{children:[o.jsx(s.Icon,{children:o.jsx(d,{})}),o.jsx(s.Input,{placeholder:"Type your email address"})]},argTypes:{}},e={},r={args:{children:[o.jsx(s.Input,{placeholder:"Type your email address"})]}};var t,a,p;e.parameters={...e.parameters,docs:{...(t=e.parameters)==null?void 0:t.docs,source:{originalSource:"{}",...(p=(a=e.parameters)==null?void 0:a.docs)==null?void 0:p.source}}};var n,c,m;r.parameters={...r.parameters,docs:{...(n=r.parameters)==null?void 0:n.docs,source:{originalSource:`{
+  args: {
+    children: [<TextInput.Input placeholder='Type your email address' />]
+  }
+}`,...(m=(c=r.parameters)==null?void 0:c.docs)==null?void 0:m.source}}};const y=["Default","WithoutIcon"];export{e as Default,r as WithoutIcon,y as __namedExportsOrder,T as default};
