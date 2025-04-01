@@ -9,7 +9,7 @@ initialize({
   onUnhandledRequest: 'bypass'
 })
 
-export const decoratros = [mswDecorator]
+export const decorators = [mswDecorator]
 
 const preview: Preview = {
   parameters: {
