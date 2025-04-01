@@ -1,6 +1,5 @@
 import { FormEvent, useState } from 'react';
 import { Envelope, Lock } from 'phosphor-react'
-
 import { Button } from "../components/Button";
 import { Heading } from "../components/Heading";
 import { Text } from "../components/Text";
@@ -11,8 +10,16 @@ import { Logo } from "../Logo";
 export function SignIn() {
   const [isUserSignedIn, setIsUserSignedIn] = useState(false)
 
-  function handleSignIn(event: FormEvent) {
+  async function handleSignIn(event: FormEvent) {
     event.preventDefault()
+
+    await fetch('/sessions', {
+      method: 'POST',
+      body: JSON.stringify({
+         email: 'silva.souza.adriano@gmail.com',
+        password: '123456'
+      }),
+    })
 
     setIsUserSignedIn(true)
   }

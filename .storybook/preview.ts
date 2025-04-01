@@ -3,6 +3,14 @@ import { themes } from '@storybook/theming'
 
 import '../src/styles/global.css'
 
+import { initialize, mswDecorator } from 'msw-storybook-addon'
+
+initialize({
+  onUnhandledRequest: 'bypass'
+})
+
+export const decoratros = [mswDecorator]
+
 const preview: Preview = {
   parameters: {
     controls: {
